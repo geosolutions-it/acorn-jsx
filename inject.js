@@ -446,8 +446,14 @@ module.exports = function(acorn) {
           this.semicolon();
           return;
       } else if(!method.static && this.eat(tt.eq)) {
-          method.value = this.parseParenAndDistinguishExpression(true);
-          classBody.body.push(this.finishNode(method, "MethodDefinition"));
+          method.value = this.parseExpression();
+          if (method.value.type !== 'ObjectExpression') {
+              classBody.body.push(this.finishNode(method, "MethodDefinition"));
+              this.semicolon();
+              return;
+          }
+
+          classBody.body.push(this.finishNode(method, "InstanceProperty"));
           this.semicolon();
           return;
       }
