@@ -1,3 +1,8 @@
+# Fork info
+
+This repo has been forked because we needed to add [this](https://github.com/geosolutions-it/acorn-jsx/tree/95bc736f4a9e8e8957d08427d3d2a0d8b3953bd7) fix
+We are going to publish on npm the **release** branch
+
 # Acorn-JSX
 
 [![Build Status](https://travis-ci.org/RReverser/acorn-jsx.svg?branch=master)](https://travis-ci.org/RReverser/acorn-jsx)

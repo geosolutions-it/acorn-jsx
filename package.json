@@ -1,18 +1,14 @@
 {
-  "name": "acorn-jsx",
+  "name": "@geosolutions/acorn-jsx",
   "description": "Alternative, faster React.js JSX parser",
-  "homepage": "https://github.com/RReverser/acorn-jsx",
-  "version": "4.0.1",
+  "homepage": "https://github.com/geosolutions-it/acorn-jsx.git",
+  "version": "4.0.2",
   "maintainers": [
-    {
-      "name": "Ingvar Stepanyan",
-      "email": "me@rreverser.com",
-      "web": "http://rreverser.com/"
-    }
+    "Ingvar Stepanyan <me@rreverser.com> (http://rreverser.com/)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/RReverser/acorn-jsx"
+    "url": "git+https://github.com/geosolutions-it/acorn-jsx.git"
   },
   "license": "MIT",
   "scripts": {
@@ -24,5 +20,13 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "mocha": "^3.3.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/geosolutions-it/acorn-jsx/issues"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }
